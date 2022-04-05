@@ -7,7 +7,7 @@
 nav{
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 70px;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,11 +18,13 @@ nav{
 nav ul{
     display: flex;
     list-style: none;
+    align-items: center;
+    justify-content: center;
     width: 50%;
 }
 
 nav ul li{
-    padding: 12px 30px;
+    padding: 0px 14px;
 }
 
 nav #logo{
@@ -36,7 +38,9 @@ nav #right_controls{
     width: 25%;
     padding: 14px 30px;
     display:flex;
-    padding-left: 100px;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 #main_body{
@@ -46,25 +50,43 @@ nav #right_controls{
     background-size: cover;
     background-position: center;
     display: flex;
+    align-items: center;
 }
 
 #main_body #welcome_text{
-    width:40%;
+    width:45%;
     float: left;
     margin-top: 70px;
     align-items: flex-end;
     justify-content: center;
     display:flex;
     flex-direction: column;
-    padding-right: 5%;
     padding-bottom: 100px;
 }
 
 
 
 #welcome_text #large_welcome_text{
-    font-size: 100px;
+    font-size: 130px;
     font-weight: 500;
     color: red;
 }
 
+#welcome_image_bg{
+    height: 70%;
+    width: 33%;
+    margin-left: 54%;
+    margin-top: 10px;
+    background-color: orangered;
+    box-sizing: border-box;
+    border: 15px solid white;
+    border-radius: 100%;
+    position: absolute;
+}
+
+#burger{
+    height: 57%;
+    width: 37%;
+    z-index: 999;
+    margin-left: 3%;
+}
